@@ -28,4 +28,4 @@ variable "project" {
 
 variable "environment" {
   type = string
-}
+} 
