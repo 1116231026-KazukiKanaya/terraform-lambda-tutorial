@@ -3,8 +3,8 @@
 # ========================================
 data archive_file "lambda_zip" {
     type = "zip"
-    source_file = "${path.module}/src/lambda_handler.py"
-    output_path = "${path.module}/src/lambda_handler.zip"
+    source_file = "${path.module}/../src/lambda_handler.py"
+    output_path = "${path.module}/../src/lambda_handler.zip"
 }
 
 resource "aws_lambda_function" "lambda_function" {
@@ -17,6 +17,6 @@ resource "aws_lambda_function" "lambda_function" {
   runtime = "python3.10"
   handler = "lambda_handler.lambda_handler"
 
-  timeout = 30
-  memory_size = 512
+  timeout = 3
+  memory_size = 128
 }

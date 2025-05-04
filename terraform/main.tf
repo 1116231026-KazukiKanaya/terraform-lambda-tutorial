@@ -16,7 +16,7 @@ terraform {
 # ========================================
 provider "aws" {
   profile = "terraform"
-  region  = "ap-northeast-3"
+  region  = var.region
 }
 
 # ========================================
@@ -29,3 +29,7 @@ variable "project" {
 variable "environment" {
   type = string
 } 
+
+variable "region" {
+  type = string
+}
