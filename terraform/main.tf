@@ -28,8 +28,18 @@ variable "project" {
 
 variable "environment" {
   type = string
-} 
+}
 
 variable "region" {
   type = string
+}
+
+variable "frontend_origin" {
+  type    = string
+  default = "http://localhost:5173"
+}
+
+variable "deploy_frontend" {
+  type    = bool
+  default = false
 }
