@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    
+    > .title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    > .button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #ff8c00;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    
+    > .button:hover {
+        background-color: #ff7f00;
+    }
+    
+    > .loading {
+        margin-top: 20px;
+        font-size: 16px;
+        color: #666;
+    }
+    
+    > .fortuneResult {
+        margin-top: 30px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #2e8b57;
+    }
+}
+  
